@@ -15,9 +15,12 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   const ref = useRef<any>();
   const { nodes } = useGLTF('/model.gltf') as GLTFResult;
 
+  useFrame((state, delta) => (ref.current.rotation.y += delta * 0.2));
+
   return (
     <group {...props} dispose={null} ref={ref}>
       <mesh
+        ref={ref}
         castShadow
         receiveShadow
         geometry={nodes.mesh_0.geometry}

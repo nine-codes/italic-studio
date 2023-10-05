@@ -15,11 +15,11 @@ export default function Home() {
       <Scene />
       <main className='flex min-h-screen flex-col items-center justify-between p-10 bg-black text-center'>
         <div className='grid gap-8 mb-8 z-10'>
-          <h2 className='text-[32px]'>Hello, we are</h2>
+          <h2 className='text-2xl text-[32px]'>Hello, we are</h2>
           <Logo />
         </div>
 
-        <h1 className='text-[80px] mb-32 z-10'>
+        <h1 className='text-5xl lg:text-[80px] mb-32 z-10'>
           Digital design & brand agency
         </h1>
 

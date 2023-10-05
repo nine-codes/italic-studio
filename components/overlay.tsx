@@ -12,7 +12,7 @@ import Logo from './icons/logo';
 export default function Overlay() {
   return (
     <Dialog>
-      <DialogTrigger className='border border-white text-[32px] py-6 px-20 backdrop-blur-md bg-black/50 mb-40'>
+      <DialogTrigger className='border border-white text-2xl lg:text-[32px] py-6 px-20 backdrop-blur-md bg-black/50 mb-40'>
         Work with us
       </DialogTrigger>
       <DialogContent className='w-screen max-w-full h-full'>

@@ -6,6 +6,7 @@ import Jazeera from '@/components/icons/jazeera';
 import Logo from '@/components/icons/logo';
 import Sportklub from '@/components/icons/sportklub';
 import Swiss from '@/components/icons/swiss';
+import Overlay from '@/components/overlay';
 import Scene from '@/components/scene';
 import Image from 'next/image';
 
@@ -19,9 +20,7 @@ export default function Home() {
 
       <h1 className='text-[80px] mb-32'>Digital design & brand agency</h1>
 
-      <button className='border border-white text-[32px] py-6 px-20 backdrop-blur-md bg-black/50 mb-40'>
-        Work with us
-      </button>
+      <Overlay />
 
       <section className='flex items-center justify-between flex-wrap w-full gap-16'>
         <Dinarica />

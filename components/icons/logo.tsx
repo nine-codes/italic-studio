@@ -6,6 +6,7 @@ export default function Logo() {
       viewBox='0 0 248 243'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className='w-full h-full'
     >
       <g filter='url(#filter0_d_2_15)'>
         <path

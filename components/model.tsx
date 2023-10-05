@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
+import { useFrame } from '@react-three/fiber';
+import { useRef } from 'react';
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -10,11 +12,11 @@ type GLTFResult = GLTF & {
 };
 
 export default function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/model.gltf') as GLTFResult;
+  const ref = useRef<any>();
+  const { nodes } = useGLTF('/model.gltf') as GLTFResult;
 
-  console.log(nodes.mesh_0.material, materials);
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={ref}>
       <mesh
         castShadow
         receiveShadow

@@ -41,3 +41,12 @@
   flex: 1;
   margin: auto;
 }
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

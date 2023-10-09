@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Scene />
-      <main className='flex relative min-h-screen flex-col items-center justify-between p-10 text-center w-full h-full'>
+      <main className='flex relative min-h-screen flex-col items-center justify-between p-5 text-center w-full h-full'>
         <div className='grid gap-8 mb-8 z-10'>
           <h2 className='text-2xl text-[32px]'>Hello, we are</h2>
           <Logo />
@@ -27,7 +27,7 @@ export default function Home() {
 
         <section
           id='logos'
-          className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 items-center justify-start flex-wrap wrap w-full z-10 container mx-auto'
+          className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 items-center justify-start flex-wrap wrap w-full z-10 lg:container lg:mx-auto'
         >
           <Dinarica />
           <Swiss />

@@ -36,3 +36,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+#logos > * {
+  flex: 1;
+  margin: auto;
+}

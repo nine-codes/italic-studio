@@ -25,7 +25,10 @@ export default function Home() {
 
         <Overlay />
 
-        <section className='flex items-center justify-between flex-wrap w-full gap-16 z-10'>
+        <section
+          id='logos'
+          className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 items-center justify-start flex-wrap wrap w-full z-10 container mx-auto'
+        >
           <Dinarica />
           <Swiss />
           <Caribou />

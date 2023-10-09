@@ -1,17 +1,11 @@
 'use client';
-import { Canvas } from '@react-three/fiber';
-import { Stage } from '@react-three/drei';
-import Model from './model';
+import Spline from '@splinetool/react-spline';
 
 export default function Scene() {
   return (
-    <Canvas
+    <Spline
       className='w-full h-full !fixed bg-transparent'
-      camera={{ fov: 35, zoom: 1.3, near: 1, far: 1000 }}
-    >
-      <Stage preset='rembrandt' intensity={1} environment='city'>
-        <Model />
-      </Stage>
-    </Canvas>
+      scene='https://prod.spline.design/bVhSMo-49BX2eowk/scene.splinecode'
+    />
   );
 }

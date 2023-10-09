@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Scene />
-      <main className='flex min-h-screen flex-col items-center justify-between p-10 bg-black text-center'>
+      <main className='flex relative min-h-screen flex-col items-center justify-between p-10 text-center w-full h-full'>
         <div className='grid gap-8 mb-8 z-10'>
           <h2 className='text-2xl text-[32px]'>Hello, we are</h2>
           <Logo />

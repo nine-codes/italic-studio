@@ -23,7 +23,7 @@ export default function Overlay() {
           </DialogTitle>
           <DialogDescription>
             <a
-              href='mailto:contact@italicstudio.com'
+              href='mailto:contact@studioitalic.com'
               className='underline text-[32px] lg:text-[80px] italic text-white'
             >
               contact@studioitalic.com
